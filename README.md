@@ -1,2 +1,3 @@
 # f4st-motelsv2
-FiveM advanced motel system 
+FiveM NewQB Gelişmiş Motel Sistemi
+
