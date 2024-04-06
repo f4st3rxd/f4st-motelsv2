@@ -79,7 +79,7 @@ RegisterServerEvent("f4st-motels:server:teleportRoom")
 AddEventHandler("f4st-motels:server:teleportRoom", function(source, motel_type)
     local src = source
     local motel_type_data = motel_type
-    SetPlayerRoutingBucket(src, math.random(50,999)
+    SetPlayerRoutingBucket(src, math.random(50,999))
     TriggerClientEvent("f4st-motels:teleportRoom", src, motel_type_data)
 end)
 
