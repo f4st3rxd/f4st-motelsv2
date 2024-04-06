@@ -4,7 +4,7 @@ FastMotels.Blips = true
 FastMotels.BlipSprite = 475
 FastMotels.BlipScale = 0.6
 FastMotels.BlipColour = 83 
-FastMotels.MainBucket = 1
+FastMotels.MainBucket = 0
 FastMotels.MotelCoords = vector3(-1857.82, -347.12, 49.84)
 
 -- ODA ÜCRETİ AYARLARI -- 
