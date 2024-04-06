@@ -84,7 +84,6 @@ AddEventHandler("f4st-motels:server:teleportRoom", function(source, motel_type)
 end)
 
 RegisterServerEvent('f4st-motels:ExitRoom')
-AddEventHandler('f4st-hooker:ExitRoom', function(id)
-    local src = source
-    SetPlayerRoutingBucket(src, 0)
+AddEventHandler('f4st-motels:ExitRoom', function()
+    SetPlayerRoutingBucket(source, FastMotels.MainBucket)
 end)
