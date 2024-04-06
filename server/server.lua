@@ -1,5 +1,4 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-local Rooms = {}
 
 RegisterServerEvent("f4st-motels:datacheck")
 AddEventHandler("f4st-motels:datacheck", function()
@@ -13,7 +12,6 @@ AddEventHandler("f4st-motels:datacheck", function()
         PlayerCitizenID
     }, function(motel_type)
         motel_type_data = motel_type 
-        --print(motel_type_data)
         TriggerEvent("f4st-motels:server:teleportRoom", src, motel_type_data) 
     end)
 end)
@@ -81,40 +79,12 @@ RegisterServerEvent("f4st-motels:server:teleportRoom")
 AddEventHandler("f4st-motels:server:teleportRoom", function(source, motel_type)
     local src = source
     local motel_type_data = motel_type
-
-    local bucket = getFirstBucket()
-    if bucket < 64 then
-        Rooms[src] = bucket
-        SetPlayerRoutingBucket(src, Rooms[src])
-        TriggerClientEvent("f4st-motels:teleportRoom", src, motel_type_data)
-    else
-        TriggerClientEvent("QBCore:Notify", source, "Şu anda müsait oda bulunmamakta!", "error")
-    end
-end)
-
-
-function getFirstBucket()
-    local i = 1
-    repeat
-        local founded = false
-        for k, v in pairs(Rooms) do
-            if Rooms[k] == i then
-                founded = true
-                i=i+1
-                break
-            end
-        end
-    until not founded
-    return i
-end
-
-AddEventHandler('playerDropped', function(_)
-    Rooms[source] = nil
+    SetPlayerRoutingBucket(src, math.random(50,999)
+    TriggerClientEvent("f4st-motels:teleportRoom", src, motel_type_data)
 end)
 
 RegisterServerEvent('f4st-motels:ExitRoom')
 AddEventHandler('f4st-hooker:ExitRoom', function(id)
     local src = source
-    Rooms[src] = nil
     SetPlayerRoutingBucket(src, 0)
 end)
