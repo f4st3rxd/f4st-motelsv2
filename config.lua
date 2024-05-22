@@ -1,6 +1,6 @@
 FastMotels = {}
 
-FastMotels.Inventory = "ox" -- qb or ox
+FastMotels.Inventory = "qb" -- qb or ox
 
 FastMotels.Blips = true 
 FastMotels.BlipSprite = 475
