@@ -1,5 +1,9 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+RegisterServerEvent("f4st-motels:registerstash", function(motel_label)
+    exports.ox_inventory:RegisterStash(motel_label, motel_label, 50, 5000000, QBCore.Functions.GetPlayer(source).PlayerData.citizenid)
+end)
+
 RegisterServerEvent("f4st-motels:datacheck")
 AddEventHandler("f4st-motels:datacheck", function()
     local src = source 
