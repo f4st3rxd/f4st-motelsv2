@@ -138,8 +138,15 @@ end)
 
 function OpenMotelStash()
     local PlayerData = QBCore.Functions.GetPlayerData()
-    TriggerEvent("inventory:client:SetCurrentStash", "Motel_"..PlayerData.citizenid)
-    TriggerServerEvent("inventory:server:OpenInventory", "stash", "Motel_"..PlayerData.citizenid)
+    if FastMotels.Inventory == "qb" then 
+        TriggerEvent("inventory:client:SetCurrentStash", "Motel_"..PlayerData.citizenid)
+        TriggerServerEvent("inventory:server:OpenInventory", "stash", "Motel_"..PlayerData.citizenid)
+    elseif FastMotels.Inventory == "ox" then
+        TriggerServerEvent("f4st-motels:registerstash", "Motel_"..PlayerData.citizenid) 
+        exports.ox_inventory:openInventory('stash', {id = "Motel_"..PlayerData.citizenid, owner = PlayerData.citizenid})
+    else 
+        return 
+    end 
 end
 
 function OpenOutfitMenu()
