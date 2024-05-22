@@ -1,5 +1,7 @@
 FastMotels = {}
 
+FastMotels.Inventory = "ox" -- qb or ox
+
 FastMotels.Blips = true 
 FastMotels.BlipSprite = 475
 FastMotels.BlipScale = 0.6
