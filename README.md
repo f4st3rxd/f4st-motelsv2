@@ -1,4 +1,9 @@
 # f4st-motelsv2
-FiveM NewQB Advanced Motel System
+FiveM Advanced Motel System For QBCore
 
-Video: https://www.youtube.com/watch?v=rKd80hBV7-A
+Support;
+
+ox_inventory [NEW]
+qb_inventory
+
+Preview : https://www.youtube.com/watch?v=rKd80hBV7-A
