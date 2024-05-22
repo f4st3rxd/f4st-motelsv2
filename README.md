@@ -3,7 +3,7 @@ FiveM Advanced Motel System For QBCore
 
 Supported Inventories;
 
-ox_inventory [NEW] \n
+ox_inventory [NEW] &
 qb_inventory
 
 Preview : https://www.youtube.com/watch?v=rKd80hBV7-A
