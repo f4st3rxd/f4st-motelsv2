@@ -13,7 +13,7 @@ f4st motelsv2 is a script developed for FiveM. It allows players to stay at mote
 
 ## Gereksinimler / Requirements
 
-- [QBCore](https://github.com/qbcore-framework/qb-core)
+- [qb-core](https://github.com/qbcore-framework/qb-core)
 - [oxmysql](https://github.com/overextended/oxmysql)
 - [qb-menu](https://github.com/qbcore-framework/qb-menu)
 
