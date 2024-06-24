@@ -230,7 +230,7 @@ CreateThread(function()
     while true do 
         local sleep = 1000
         local distance = #(FastMotels.BasicRoomStash - GetEntityCoords(PlayerPedId()))
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1 
                 QBCore.Functions.DrawText3D(FastMotels.BasicRoomStash.x, FastMotels.BasicRoomStash.y, FastMotels.BasicRoomStash.z, "[E] - Depo")
@@ -238,7 +238,7 @@ CreateThread(function()
                     OpenMotelStash()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end 
 end)
@@ -247,7 +247,7 @@ CreateThread(function()
     while true do 
         local sleep = 1000 
         local distance = #(FastMotels.BasicRoomOutfit - GetEntityCoords(PlayerPedId()))
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1
                 QBCore.Functions.DrawText3D(FastMotels.BasicRoomOutfit.x, FastMotels.BasicRoomOutfit.y, FastMotels.BasicRoomOutfit.z, "[E] - Kıyafet Dolabı")
@@ -255,7 +255,7 @@ CreateThread(function()
                     OpenOutfitMenu()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end 
 end)
@@ -264,7 +264,7 @@ CreateThread(function()
     while true do 
         local sleep = 1000 
         local distance = #(FastMotels.BasicRoomDoor - GetEntityCoords(PlayerPedId()))
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1
                 QBCore.Functions.DrawText3D(FastMotels.BasicRoomDoor.x, FastMotels.BasicRoomDoor.y, FastMotels.BasicRoomDoor.z, "[E] - Odadan Çık")
@@ -272,7 +272,7 @@ CreateThread(function()
                     ExitRoom()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end 
 end)
@@ -281,7 +281,7 @@ CreateThread(function()
     while true do 
         local sleep = 1000 
         local distance = #(FastMotels.Room1DoorCoords - GetEntityCoords(PlayerPedId()))
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1 
                 QBCore.Functions.DrawText3D(FastMotels.Room1DoorCoords.x, FastMotels.Room1DoorCoords.y, FastMotels.Room1DoorCoords.z, "[E] - Odadan Çık")
@@ -289,7 +289,7 @@ CreateThread(function()
                     ExitRoom()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end
 end)
@@ -299,7 +299,7 @@ CreateThread(function()
         local sleep = 1000 
         local distance = #(FastMotels.Room1Stash - GetEntityCoords(PlayerPedId()))
 
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1 
                 QBCore.Functions.DrawText3D(FastMotels.Room1Stash.x, FastMotels.Room1Stash.y, FastMotels.Room1Stash.z, "[E] - Depo")
@@ -307,7 +307,7 @@ CreateThread(function()
                     OpenMotelStash()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end
 end)
@@ -317,7 +317,7 @@ CreateThread(function()
         local sleep = 1000 
         local distance = #(FastMotels.Room1Outfit - GetEntityCoords(PlayerPedId()))
 
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1 
                 QBCore.Functions.DrawText3D(FastMotels.Room1Outfit.x, FastMotels.Room1Outfit.y, FastMotels.Room1Outfit.z, "[E] - Kıyafet Dolabı")
@@ -325,7 +325,7 @@ CreateThread(function()
                     OpenOutfitMenu()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end
 end)
@@ -351,7 +351,7 @@ CreateThread(function()
     while true do 
         local sleep = 1000 
         local distance = #(FastMotels.Room2Stash - GetEntityCoords(PlayerPedId()))
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1 
                 QBCore.Functions.DrawText3D(FastMotels.Room2Stash.x, FastMotels.Room2Stash.y, FastMotels.Room2Stash.z, "[E] - Depo")
@@ -359,7 +359,7 @@ CreateThread(function()
                     OpenMotelStash()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end
 end)
@@ -369,7 +369,7 @@ CreateThread(function()
         local sleep = 1000 
         local distance = #(FastMotels.Room2Outfit - GetEntityCoords(PlayerPedId()))
 
-        if InRoom then 
+        -- if InRoom then 
             if distance <= 2 then 
                 sleep = 1 
                 QBCore.Functions.DrawText3D(FastMotels.Room2Outfit.x, FastMotels.Room2Outfit.y, FastMotels.Room2Outfit.z, "[E] - Kıyafet Dolabı")
@@ -377,7 +377,7 @@ CreateThread(function()
                     OpenOutfitMenu()
                 end
             end
-        end
+        -- end
         Wait(sleep)
     end
 end)
